@@ -1,0 +1,137 @@
+	body{
+		background-color: #462350;
+		height: 100%;
+		color: #fff;
+		font-family: arial;
+		font-size: 1.6vw;
+	}
+	h3{
+		margin: 7px 0;
+
+	}
+	#container{
+		display: grid;
+		position:relative;
+		min-height: 90%;
+		min-width: 100%;
+		grid-gap: 10px;
+	}
+	.section{
+		background-color: #fff;
+	}
+
+	#section1 {
+		grid-column: 1/span 6;
+		grid-row: 1/span 3;
+		max-width: 95%;
+		margin: 5px;
+		max-height: 48vh;
+		overflow-x: auto;
+		overflow-y: auto;
+
+	} 
+	#section2 {
+		grid-column: 1/span 6;
+		grid-row: 4/span 6;
+		max-width: 95%;
+		margin: 5px;
+		max-height: 48vh;
+		overflow-x: auto;
+		overflow-y: auto;
+
+	}
+	#section3 {
+		grid-column: 7/span 4;
+		grid-row: 1/span 12;
+		max-width: 100%;
+		overflow-x: auto;
+		overflow-y: auto;
+		max-height: 95%;
+		margin: 5px;
+
+	}
+	.section-header{
+		background-color: #623071;
+		padding: 10px;
+		margin: 0;
+	}
+	table{
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+		overflow: hidden;
+		z-index: 1;
+	}
+	tr{
+		color: #000;
+	}
+	tr:hover {
+		background-color:#f5f5f5;
+	}
+	td{
+		padding: 10px 0px;
+		border-bottom: 1px solid #f5f5f5;
+		text-align: center;
+	}
+	.col-2{
+		font-size: 1vw;
+		color: gray;
+	}
+	.cell-border{
+		width: 0;
+		height: 0;
+		border-top: 40px solid transparent;
+		border-left: 30px solid #fff;
+		border-bottom: 40px solid transparent;
+		line-height: 0;
+		float: right;
+		vertical-align: middle;
+		padding: 0;
+		margin: 0;
+		background-color: lightgrey;
+		text-align: center;
+	}
+	.last-col{
+		background-color: lightgray;
+		padding: 10px;
+		border-collapse: 1px solid grey;
+	}
+	.border-parent{
+		padding: 0px;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 1070px) {
+		
+		#section1 {
+			grid-column: 1/span 12;
+			grid-row: 1/span 3;
+			width: 100%;
+			margin: auto;
+			max-height: 48vh;
+			overflow-x: auto;
+			overflow-y: auto;
+
+		} 
+		#section2 {
+			grid-column: 1/span 12;
+			grid-row: 4/span 3;
+			width:100%;
+			margin: auto;
+			max-height: 48vh;
+			overflow-x: auto;
+			overflow-y: auto;
+
+		}
+		#section3 {
+			grid-column: 1/span 12;
+			grid-row: 8/span 3;
+			width:100%;
+			margin: auto;
+			max-height: 48vh;
+			overflow-x: auto;
+			overflow-y: auto;
+
+
+		}
+	}
